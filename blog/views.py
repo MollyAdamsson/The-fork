@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views import generic
 from .forms import BookingForm
 from .models import Booking
 
