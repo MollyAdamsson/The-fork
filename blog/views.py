@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import BookingForm
+from .models import Booking
 
 
 def book_table(request):
