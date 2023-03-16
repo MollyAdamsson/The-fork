@@ -1,26 +1,12 @@
 from django.shortcuts import render, redirect
 from django.views import generic
+from django.views.generic import TemplateView
 from .forms import BookingForm
 from .models import Booking
 
 
-class Indexview(TemplateView):
-    template_name = 'blog/index.html'
-
-def index(request):
-    return render(request, 'index.html', context=None)
-
-
-def login(request):
-    return render(request, 'login.html', context=None)
-
-
-def signUp(request):
-    return render(request, 'Sign-up', context=None)
-
-
-def loggedin(request):
-    return render(request, 'logged-in.html', context=None)
+class IndexView(TemplateView):
+    template_name = '../templates/index.html'
 
 
 def book_table(request):
