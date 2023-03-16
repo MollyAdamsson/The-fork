@@ -4,6 +4,22 @@ from .forms import BookingForm
 from .models import Booking
 
 
+def index(request):
+    return render(request, 'index.html', context=None)
+
+
+def login(request):
+    return render(request, 'login.html', context=None)
+
+
+def signUp(request):
+    return render(request, 'Sign-up', context=None)
+
+
+def loggedin(request):
+    return render(request, 'logged-in.html', context=None)
+
+
 def book_table(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
