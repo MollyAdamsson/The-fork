@@ -4,6 +4,9 @@ from .forms import BookingForm
 from .models import Booking
 
 
+class Indexview(TemplateView):
+    template_name = 'blog/index.html'
+
 def index(request):
     return render(request, 'index.html', context=None)
 
