@@ -32,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['the-fork.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
