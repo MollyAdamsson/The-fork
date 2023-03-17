@@ -1,6 +1,17 @@
 body{
-  background-color: #212529; 
+  background-color: #980707; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.btn-signup {
+  background-color: #23BBBB;
+  color: #06b809;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+  background-color: #240cdb;
+  color: #23BBBB;
 }

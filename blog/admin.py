@@ -8,5 +8,4 @@ class BookingAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'slug')
     search_fields = ['name', 'content']
-    list_filter = ('created_on', 'updated_on')
     summernote_fields = ('content')
