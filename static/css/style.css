@@ -1,8 +1,9 @@
 body{
-  background-color: #980707; 
+  background-color: #181010; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .btn-signup {
