@@ -10,6 +10,8 @@
 
 - image of kanban here -
 
+## User experience
+
 ### Site goals
 
 * This site is created with the intention to help the resturaunt keep track of their bookings. They should be able to view and change if they think it should be neccessary
@@ -24,7 +26,6 @@
 * As a first time user I want to easily understand the menu
 * As a first time user I want to easily understand the booking system
 * As a first time user I want to easily understand ho to change/delete my reservations
-
 
 ## Site structure
 
@@ -67,7 +68,7 @@
 
 ## Technologies
 
-## Pthon modules used
+## Python modules used
 
 ## Testing
 
@@ -76,7 +77,5 @@
 #### Github deployment
 
 #### Heroku Deployment
-
-## User experience
 
 ## Credits 

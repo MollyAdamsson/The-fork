@@ -1,4 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
+{% block content %}
 
-<h1>Hello</h1>
+<div class="position-relative">
+    <div class="container-fluid p-0">
+        <img src="{% static 'images/hero-image1.jpg' %}" class="w-100 img-fluid d-block" alt="Top of the menu swirl image divider">
+    </div>
+    <h1 class="text-center position-absolute top-40 start-50 translate-middle-x text-white display-4" style="font-weight: 600; text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8); top: 40px; width: 100%;">It's forking good!</h1>
+</div>
+<p>Welcome to The Fork, a restaurant where delicious food and great ambiance
+meet to create an unforgettable dining experience. Whether you're in the mood
+for a quick lunch, a romantic dinner, or a family celebration, our menu has something for everyone.
+From classic dishes with a modern twist to creative cocktails and desserts,
+our talented chefs use only the freshest and finest ingredients to ensure that
+each bite is as delicious as the last. And with our friendly and attentive staff,
+you'll feel right at home as you savor every moment of your meal. 
+So come on in, take a seat, and let us take care of the rest. 
+We can't wait to have you dine with us at The Fork.</p>
+
+{% endblock %}
