@@ -9,4 +9,8 @@ urlpatterns = [
         'createbooking/', views.CreateBookingView.as_view(),
         name='createbooking'
         ),
+    path(
+        'managebooking/', views.ManageBookingView.as_view(),
+        name='managebooking'
+        ),
 ]

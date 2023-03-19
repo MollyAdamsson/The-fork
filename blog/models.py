@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.core.validators import MaxValueValidator, MinValueValidator
@@ -9,11 +10,11 @@ STATUS = ((0, "Busy"), (1, "Booking made"))
 
 class Booking(models.Model):
     name = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=200, unique=True)
-    created_on = models.DateTimeField()
+    created_on = models.DateTimeField(default=datetime.now())
     email = models.EmailField()
     date = models.DateField()
     time = models.TimeField()
+    userId = models.CharField(max_length=50, null=True)
     num_guests = models.IntegerField(validators=[MinValueValidator(1)])
 
     def clean_date(self):
