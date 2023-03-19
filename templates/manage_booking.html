@@ -2,15 +2,38 @@
 {% load static %}
 
 {% block content %}
-<div class="col-md-4 card mb-4  mt-3 ">
+<div class="col-md-4 mb-4  mt-3" id="manage-bookings">
     <h3 class="text-center">Manage Your Bookings</h3>
         {% if user.is_authenticated %}
+        <ul>
         {% for booking in object_list %}
-        <li><a href="{% url 'editbooking' %}">{{ booking.name }}</a></li>
-
+        <li>{{ booking.name }} {{booking.date}} {{booking.time}} {{booking.num_guests}} <button type="button" class="btn btn-danger delete-button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id={{booking.pk}}>
+            Delete
+          </button>
+          <a href="{% url 'editbooking' %}?bookingId={{booking.pk}}" class="btn btn-primary">
+            Edit
+          </a>
+        </li>
         {% endfor %}
+    </ul>
         {% endif %}
-    </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-delete-url="{% url 'deletebooking' %}">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  blabla
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                  <button type="button" class="btn btn-primary" id="confirmDeleteButton">Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
 </div>
-
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

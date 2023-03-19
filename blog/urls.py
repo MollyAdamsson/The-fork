@@ -13,4 +13,20 @@ urlpatterns = [
         'managebooking/', views.ManageBookingView.as_view(),
         name='managebooking'
         ),
+    path(
+        'editbooking/', views.EditBookingView.as_view(),
+        name='editbooking'
+        ),
+    path(
+        'bookingsuccess/', views.BookingSuccessView.as_view(),
+        name='bookingsuccess'
+        ),
+    path(
+        'deletebooking/', views.DeleteBookingView.as_view(),
+        name='deletebooking'
+        ),
+    path(
+        'deletesuccess/', views.DeleteSuccessView.as_view(),
+        name='deletesuccess'
+        ),
 ]

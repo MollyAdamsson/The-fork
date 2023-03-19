@@ -33,3 +33,5 @@ class Booking(models.Model):
         if datetime_obj < datetime.now():
             raise forms.ValidationError('Invalid time - cannot book in the past')
         return time
+
+
