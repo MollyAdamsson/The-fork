@@ -7,10 +7,10 @@
         {% if user.is_authenticated %}
         <ul>
         {% for booking in object_list %}
-        <li>{{ booking.name }} {{booking.date}} {{booking.time}} {{booking.num_guests}} <button type="button" class="btn btn-danger delete-button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id={{booking.pk}}>
+        <li>{{booking.name}} {{booking.date}} {{booking.time}} {{booking.num_guests}}<button type="button" class="btn btn-danger delete-button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id={{booking.pk}}>
             Delete
           </button>
-          <a href="{% url 'editbooking' %}?bookingId={{booking.pk}}" class="btn btn-primary">
+          <a href="{% url 'editbooking' booking.id %}" class="btn btn-primary">
             Edit
           </a>
         </li>

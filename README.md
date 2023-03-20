@@ -29,34 +29,65 @@
 
 ## Site structure
 
-#### Navigation
+### Navigation
 
 * The navigation bar provides the different links for the different pages, such as Home, Menu, Create Booking/Manage Booking, register, login and logout. It is accesable on all pages and offers the user an easy experience.
 
 - image of navbar here - 
 
-#### Home page
+### Home page
 
+* The Home page introduce the user to the resturaunt. An image of tables, glasses and nice lighting is shown and just beneath you can read a description of what the resturaunt try to achieve.
 
-#### Menu
+-image here
 
+### Menu
 
-#### Create/manage Booking
+* The menu-page also show an image and underneath you can see a simple, yet delicious, menu of different courses the user can choose from. 
 
+-image here
 
-#### Register
+### Create/manage Booking
 
-#### Login
+* Here the user can choose between the create booking page or the manage booking page.
+* Create booking offers the user to easily pick when they want to make their reservation. They can choose date and time, and they have to fill in their name, email and how many guests that will attend to book. 
+* If the user then click on the manage booking option they can see their reservation and they are able to edit and delete as per their liking. If the user click on 'delete' they can see a sign popping up asking if they are sure, the user then have to press yes or no.
 
-#### Logout
+-image here
+-image here
 
-#### Footer
+### Register
 
-#### Error pages
+* Makes it available for a new user to create an account, you have to have an account to be able to book a reservation.
 
-#### Favicon
+-image here
+
+### Login
+
+* This page is where the user can log in and then redirect themselves to the create booking page if they want. 
+
+-image here
+
+### Logout
+
+* This page is where the user can log out if they want.
+
+-image here
+
+### Footer
+
+* Is at the bottom of the page, showing some links and copyright statment
+
+-image here
+
+### Favicon
+
+* To make it easier for the user so they know which tab to click if they have several open. This is added to bring a more professional and put-together look.  
+
+-image here
 
 ### Wireframes 
+-images here
 
 ## Design
 

@@ -18,8 +18,11 @@ body{
 }
 
 footer {
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
 }

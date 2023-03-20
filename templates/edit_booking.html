@@ -4,7 +4,8 @@
 
 <div class="col-md-4 card mb-4  mt-3 ">
     {% if showForm == True %}
-    <form method="POST" action="{% url 'editbooking' %}" class="form mb-2 p-2 form-style" enctype="multipart/form-data">
+    
+    <form action="{% url 'editbooking' booking.id %}" method="POST">
     <h3 class="text-center">Edit Booking</h3>
         {% if user.is_authenticated %}
         {{ form.as_p }}
@@ -19,5 +20,4 @@
     </div>
     {% endif %}
 </div>
-
 {% endblock %}
