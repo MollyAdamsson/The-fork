@@ -84,7 +84,7 @@
 
 * To make it easier for the user so they know which tab to click if they have several open. This is added to bring a more professional and put-together look.  
 
--image here
+![design image](readme.images/thefork.png)
 
 ### Wireframes 
 -images here
