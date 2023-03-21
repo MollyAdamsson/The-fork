@@ -130,9 +130,16 @@
 
 ![design image](readme.images/logout.png)
 
-#### Color-scheme
+### Images
+
+* images used n the project were all found on pexels
+
+### Color-scheme
 
 * I decided to keep it clean and minimalistic to get a classy and calm feel. The black and white color-combos was applied to offer the user the sense of professionalism. 
+
+## Admin Page
+* Admin has access via the default Django Admin page. The Admin login can be accessed from the navigation menus once a superuser has logged into The Fork. Once logged in, Admin users have all the access to create, edit and delete all bookings. All the requests can be viewed from the admin page.
 
 ## Technologies 
 
@@ -153,9 +160,18 @@
 
 ## Testing
 
+### Lighthouse
+
+* This is the read from lighthouse:
+
+![image](readme.images/lighthouse.png)
+
+
 ### Validator testing
 
-* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned from [PEP8](http://pep8online.com/) 
+* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned.
+* The problems shown in the workspace were fixed as well. 
+*  All the code has been run through the W3C html validator, the W3C CSS validator and the JavaScript JSHint validator. The code passed the W3C Validator barring all the django template tags. Outside of those, no errors were found.
 
 ### Manual testing
 
@@ -166,6 +182,10 @@
 * The user can only see their own bookings
 * The user can only delete/edit their own bookings
 * The admin/staff can delete/edit all bookings
+
+### Bugs
+
+* No bugs were detected
 
 ## Deployment
 
