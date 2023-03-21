@@ -173,6 +173,10 @@
 * The problems shown in the workspace were fixed as well. 
 *  All the code has been run through the W3C html validator, the W3C CSS validator and the JavaScript JSHint validator. The code passed the W3C Validator barring all the django template tags. Outside of those, no errors were found.
 
+* All code passed through the pep8-validator came out clean, looking like this:
+
+![image](readme.images/pep8.png)
+
 ### Manual testing
 
 * Only the admin/staff can access all of the bookings
