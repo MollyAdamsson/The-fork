@@ -31,7 +31,7 @@ class Booking(models.Model):
         # Check if the date and time is already booked
         if Booking.objects.filter(date=date, time=time).exists():
             raise forms.ValidationError(
-                'This date and time has already been booked. Please select a different date and time.'
+                'This date and time is already booked. Please try again.'
                 )
         return date
 

@@ -2,7 +2,7 @@
 
 * The Fork is a made up resturaunt based in a town in south of Sweden. This app is a booking system designed so that visitors and staff easily can manage the booking of tables. Both parties can book, view, change and delete their reservations as per their own liking. 
 
-- add picture of the different devices here - 
+![Image](readme.images/responsive.png)
 
 ## Planning
 
@@ -90,10 +90,11 @@
 
 ### Features left to implement
 
-* 
-* 
-* 
-* 
+* I would like to add a map function to point out where the location is
+* I would like to add a function to the menu so that the users
+ can choose what they want and add to their booking
+* I would like to spend some more time on the styling and make sure it looks even classier
+* I would like to clean up the time slots so that the user can have a simpler choosing. I want to apply a 15 min interval.
 
 ## Design
 
@@ -102,24 +103,31 @@
 * I created different Wireframes via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
 
 * This is the design for the home page:
+
 ![design image](readme.images/Homepage.png)
 
 * This is the design for the menu page:
+
 ![design image](readme.images/Menupage.png)
 
 * This is the design for the create booking page:
+
 ![design image](readme.images/createbooking.png)
 
 * This is the design for the manage booking page:
+
 ![design image](readme.images/managebooking.png)
 
 * This is the design for the register page:
+
 ![design image](readme.images/register.png)
 
 * This is the design for the login page:
+
 ![design image](readme.images/login.png)
 
 * This is the design for the logout page:
+
 ![design image](readme.images/logout.png)
 
 #### Color-scheme
@@ -141,7 +149,7 @@
 
 ## Python modules used
 
-* 
+* Resturaunt Booking System
 
 ## Testing
 
@@ -151,7 +159,13 @@
 
 ### Manual testing
 
-* Hur sidan fungerar, att man inte kan "break it" osv!
+* Only the admin/staff can access all of the bookings
+* If the user try to book at the same time as someone else there is an errormessage shown
+* It is not possible to book unless the user has an account
+* The former bookings is not shown unless the the user has an account
+* The user can only see their own bookings
+* The user can only delete/edit their own bookings
+* The admin/staff can delete/edit all bookings
 
 ## Deployment
 

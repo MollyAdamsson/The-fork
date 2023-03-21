@@ -29,3 +29,81 @@ footer {
 .page-height {
   min-height: 100vh;
 }
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .btn-signup {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+  .page-height {
+    min-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .btn-signup {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .page-height {
+    min-height: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  .btn-signup {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .page-height {
+    min-height: 90vh;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+}
