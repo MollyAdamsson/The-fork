@@ -8,7 +8,7 @@
 
 * This project was developed through the Kanban board, you can find this via the github projects. Here the developer creates cards to help them during the development, this is mainly to make it easier to keep track of the different user stories and make sure everything is completed.
 
-- image of kanban here -
+![Image](readme.images/kanbanboard.png)
 
 ## User experience
 
@@ -33,19 +33,21 @@
 
 * The navigation bar provides the different links for the different pages, such as Home, Menu, Create Booking/Manage Booking, register, login and logout. It is accesable on all pages and offers the user an easy experience.
 
-- image of navbar here - 
+![Image](readme.images/navigation.png)
 
 ### Home page
 
 * The Home page introduce the user to the resturaunt. An image of tables, glasses and nice lighting is shown and just beneath you can read a description of what the resturaunt try to achieve.
 
--image here
+![Image](readme.images/homeimage.png)
+![Image](readme.images/maintext.png)
 
 ### Menu
 
 * The menu-page also show an image and underneath you can see a simple, yet delicious, menu of different courses the user can choose from. 
 
--image here
+![Image](readme.images/menu1.png)
+![Image](readme.images/menu2.png)
 
 ### Create/manage Booking
 
@@ -53,32 +55,32 @@
 * Create booking offers the user to easily pick when they want to make their reservation. They can choose date and time, and they have to fill in their name, email and how many guests that will attend to book. 
 * If the user then click on the manage booking option they can see their reservation and they are able to edit and delete as per their liking. If the user click on 'delete' they can see a sign popping up asking if they are sure, the user then have to press yes or no.
 
--image here
--image here
+![Image](readme.images/booking.png)
+![Image](readme.images/managebooking2.png)
 
 ### Register
 
 * Makes it available for a new user to create an account, you have to have an account to be able to book a reservation.
 
--image here
+![Image](readme.images/register2.png)
 
 ### Login
 
 * This page is where the user can log in and then redirect themselves to the create booking page if they want. 
 
--image here
+![Image](readme.images/signin.png)
 
 ### Logout
 
 * This page is where the user can log out if they want.
 
--image here
+![Image](readme.images/signout.png)
 
 ### Footer
 
-* Is at the bottom of the page, showing some links and copyright statment
+* Is at the bottom of the page, showing copyright statment and year.
 
--image here
+![Image](readme.images/footer.png)
 
 ### Favicon
 
@@ -86,27 +88,106 @@
 
 ![design image](readme.images/thefork.png)
 
-### Wireframes 
--images here
+### Features left to implement
+
+* 
+* 
+* 
+* 
 
 ## Design
 
+### Wireframes 
+
+* I created different Wireframes via the Balsamiq website, I used this because I wanted to structure everything up for myself to make it easier for me to create.
+
+* This is the design for the home page:
+![design image](readme.images/Homepage.png)
+
+* This is the design for the menu page:
+![design image](readme.images/Menupage.png)
+
+* This is the design for the create booking page:
+![design image](readme.images/createbooking.png)
+
+* This is the design for the manage booking page:
+![design image](readme.images/managebooking.png)
+
+* This is the design for the register page:
+![design image](readme.images/register.png)
+
+* This is the design for the login page:
+![design image](readme.images/login.png)
+
+* This is the design for the logout page:
+![design image](readme.images/logout.png)
+
 #### Color-scheme
 
-#### Typography
+* I decided to keep it clean and minimalistic to get a classy and calm feel. The black and white color-combos was applied to offer the user the sense of professionalism. 
 
-#### Images
+## Technologies 
 
-## Technologies
+* [GitHub](https://github.com/) - to host the repositories.
+* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
+* [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
+* [Javascript](https://www.w3schools.com/js/) - the apply some extra button functions that I wanted
+* [Stack overflow](https://stackoverflow.com/) - basic explaining 
+* [Bootstrap 5](https://www.w3schools.com/bootstrap5/bootstrap_get_started.php) - for design and placement
+* [PEP8](http://pep8online.com/) - for testing and validating the code.
+* [Google Fonts](https://fonts.google.com/about) - for the font of the text
 
 ## Python modules used
 
+* 
+
 ## Testing
+
+### Validator testing
+
+* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned from [PEP8](http://pep8online.com/) 
+
+### Manual testing
+
+* Hur sidan fungerar, att man inte kan "break it" osv!
 
 ## Deployment
 
-#### Github deployment
+### [Github](https://github.com/) 
 
-#### Heroku Deployment
+* When logging into github, navigate to the settings tab
+* Here you can find pages down on the left side
+* A new page will load which will present the branch to master or main, and then the save option
+* Once the save button has been clicked and the page is reloaded there will be a link to the deployed site.
+
+### [Heroku](https://www.heroku.com/) Deployment:
+
+* Ensure your requirements.txt file has the required dependencies. To do this you can use the following
+code in your IDE: pip3 freeze > requirements.txt
+* Create or login to you Heroku account
+* Navigate to Dashboard
+* Click and select "Create app" in the middle of the page
+* Enter a unique name for you app
+* Select region and the "create app"
+
+### App deployment
+* Navgiate to the deploy section
+* Scroll down to the "deployment method" and select "Github"
+* Authorise the connection
+* Search for the repository name you've chosen
+* Make sure you have selected the correct branch (master/main), and select the method you desire.
 
 ## Credits 
+
+### Content
+
+* I used Code Institute's I Think Therefore I Blog (walkthrough project) for guidance with code structure and deployment steps. I found it really useful and helped me alot along the way.
+
+### Acknowledgements
+* This Resturaunt Booking System was created as Portfolio Project 4 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/). It was with great pleasure to explore the basics of most booking systems and to achieve some new skills.
+* I would like to thank my mentor [Gareth McGirr](https://www.linkedin.com/in/gareth-mcgirr/) for helping me and guiding me through this project, the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with mental support.
+
+
+Molly Adamsson, 2023

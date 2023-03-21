@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
-
+<!-- Booking confirm delete -->
 {% if success == True %}
 
-<p>You have now deleted the reservation, click here to get back to the main page</p>
+<p class="text-center mb-5">You have now deleted the reservation, click <a href="{% url 'home' %}">here</a> to get back to the main page</p>
 
 {% else %}
 

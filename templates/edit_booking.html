@@ -2,22 +2,27 @@
 
 {% block content %}
 
-<div class="col-md-4 card mb-4  mt-3 ">
-    {% if showForm == True %}
-    
-    <form action="{% url 'editbooking' booking.id %}" method="POST">
-    <h3 class="text-center">Edit Booking</h3>
-        {% if user.is_authenticated %}
-        {{ form.as_p }}
-        {% csrf_token %}
-        <button type="submit" class="btn btn-signup btn-lg">Change</button>
-        </form>
+<!-- Edit booking form -->
+<div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        {% if showForm == True %}
+        <div class="card p-5">
+          <h3 class="text-center mb-4">Edit Booking</h3>
+          <form action="{% url 'editbooking' booking.id %}" method="POST">
+            {% if user.is_authenticated %}
+            {{ form.as_p }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary btn-block mt-4">Change</button>
+            {% endif %}
+          </form>
+        </div>
+        {% else %}
+        <div>
+          Not allowed to edit
+        </div>
         {% endif %}
+      </div>
     </div>
-    {% else %}
-    <div>
-        Not allowed to edit
-    </div>
-    {% endif %}
-</div>
+  </div>
 {% endblock %}

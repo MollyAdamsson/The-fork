@@ -1,36 +1,59 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+
+<!-- Menu -->
+
 <div class="position-relative">
   <div class="container-fluid p-0">
       <img src="{% static 'images/menu1.jpg' %}" class="w-100 img-fluid d-block" alt="Top of the menu swirl image divider">
   </div>
   <h1 class="text-center position-absolute top-40 start-50 translate-middle-x text-white display-4" style="font-weight: 600; text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8); top: 40px; width: 100%;">Menu</h1>
 </div>
-<section class="container ">
+<section class="container">
   <div class="row mt-5">
     <div class="col-md-12">
-      <ul class="list-group list-group-flush">
-        <li class="d-flex justify-content-between align-items-center mb-2 pb-3 border-bottom" style="padding: 5px;">
-          <h3 class="fw-bold mb-0" style="margin-right: 10px;">Burgers</h3>
-          <span class="badge bg-dark rounded-pill" style="padding: 5px 10px;">$10</span>
+      <ul class="list-group list-group-flush" style="font-size: 16px;">
+        <li class="d-flex justify-content-between align-items-center mb-2" style="padding: 0;">
+          <div>
+            <h4 class="fw-bold mb-0" style="font-family: Georgia, serif;">Foie gras terrine with truffle and brioche</h4>
+            <p class="text-muted mb-0">A classic French dish made with a mixture of duck or goose liver, flavored with truffles, and served with buttery brioche bread.</p>
+          </div>
+          <span class="badge bg-dark rounded-pill" style="font-size: 14px;">$30</span>
         </li>
-        <li class="d-flex justify-content-between align-items-center mb-2 pb-3 border-bottom" style="padding: 5px;">
-          <h3 class="fw-bold mb-0" style="margin-right: 10px;">Pizza</h3>
-          <span class="badge bg-dark rounded-pill" style="padding: 5px 10px;">$12</span>
+        <li class="d-flex justify-content-between align-items-center mb-2" style="padding: 0;">
+          <div>
+            <h4 class="fw-bold mb-0" style="font-family: Georgia, serif;">Lobster bisque with saffron foam</h4>
+            <p class="text-muted mb-0">A creamy soup made with lobster, onions, cream, and other ingredients, topped with a light saffron foam for a touch of luxury.</p>
+          </div>
+          <span class="badge bg-dark rounded-pill" style="font-size: 14px;">$60</span>
         </li>
-        <li class="d-flex justify-content-between align-items-center mb-2 pb-3 border-bottom" style="padding: 5px;">
-          <h3 class="fw-bold mb-0" style="margin-right: 10px;">Salad</h3>
-          <span class="badge bg-dark rounded-pill" style="padding: 5px 10px;">$8</span>
+        <li class="d-flex justify-content-between align-items-center mb-2" style="padding: 0;">
+          <div>
+            <h4 class="fw-bold mb-0" style="font-family: Georgia, serif;">Beef Wellington</h4>
+            <p class="text-muted mb-0">A British classic made with a beef fillet coated in pâté and wrapped in puff pastry, then baked until golden and served with a rich sauce.</p>
+          </div>
+          <span class="badge bg-dark rounded-pill" style="font-size: 14px;">$60</span>
         </li>
-        <li class="d-flex justify-content-between align-items-center mb-2 pb-3" style="padding: 5px;">
-          <h3 class="fw-bold mb-0" style="margin-right: 10px;">Pasta</h3>
-          <span class="badge bg-dark rounded-pill" style="padding: 5px 10px;">$11</span>
+        <li class="d-flex justify-content-between align-items-center mb-2" style="padding: 0;">
+          <div>
+            <h4 class="fw-bold mb-0" style="font-family: Georgia, serif;">Seared scallops with caviar and beurre blanc</h4>
+            <p class="text-muted mb-0">A delicate seafood dish featuring seared scallops served with caviar, a luxurious French butter sauce called beurre blanc, and other accompaniments.</p>
+          </div>
+          <span class="badge bg-dark rounded-pill" style="font-size: 14px;">$50</span>
+        </li>
+        <li class="d-flex justify-content-between align-items-center mb-2" style="padding: 0;">
+          <div>
+            <h4 class="fw-bold mb-0" style="font-family: Georgia, serif;">Wagyu beef steak with truffle butter</h4>
+            <p class="text-muted mb-0">A high-end steak dish made with Japanese Wagyu beef, known for its exceptional marbling and tenderness, and served with a decadent truffle butter.</p>
+          </div>
+          <span class="badge bg-dark rounded-pill" style="font-size: 14px;">$150</span>
         </li>
       </ul>
     </div>
   </div>
 </section>
+<br>
 
 
 {% endblock %}

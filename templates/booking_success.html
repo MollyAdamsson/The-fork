@@ -2,8 +2,9 @@
 
 {% block content %}
 
-<div>
-    <p>Your reservation has now been made, click here to view you booking</p>
+<!-- Booking sucessfull page -->
+<div class="text-center mb-5">
+    <p>The reservation has now been made, click <a href="{% url 'managebooking' %}">here</a> to view the reservation</p>
 </div>
 
 {% endblock content %}
