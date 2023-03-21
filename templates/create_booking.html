@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+{% if errorMessage %}
+<div class="alert alert-danger">{{ errorMessage }}</div>
+{% endif %}
 <!-- Create booking form -->
 {% if not user.is_authenticated %}
 <div class="container my-5">
@@ -13,7 +15,7 @@
             <p>You must be logged in to book a table, click here to <a href="{% url 'account_login' %}">login</a>.</p>
           </div>
           {% else %}
-          <h3 class="mb-4">Book a Table!</h3>
+          <h3 class="mb-4">Make a reservation!</h3>
           <form method="POST" action="{% url 'createbooking' %}" class="form mb-2 p-2 form-style" enctype="multipart/form-data">
             <div class="form-row">
               {{ form.as_p }}

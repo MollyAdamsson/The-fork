@@ -64,6 +64,15 @@ class CreateBookingView(View):
                     {
                         'Booking_made': Booking_made}
                     )
+            else:
+                errorMessage = "Sorry, this time slot has already been taken."
+                return render(
+                    request, 'create_booking.html',
+                    {
+                        'form': form,
+                        'errorMessage': errorMessage
+                    }
+                )
 
         return render(request, 'create_booking.html', {'form': form})
 

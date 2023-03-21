@@ -27,6 +27,12 @@ class Booking(models.Model):
         if date > today + timedelta(weeks=4):
             raise forms.ValidationError
             ('Invalid - bookings can only be made up to 4 weeks in advance')
+
+        # Check if the date and time is already booked
+        if Booking.objects.filter(date=date, time=time).exists():
+            raise forms.ValidationError(
+                'This date and time has already been booked. Please select a different date and time.'
+                )
         return date
 
     def clean_time(self):
