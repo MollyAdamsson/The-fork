@@ -25,7 +25,7 @@
 * As a first time user I want the logout to be simple
 * As a first time user I want to easily understand the menu
 * As a first time user I want to easily understand the booking system
-* As a first time user I want to easily understand ho to change/delete my reservations
+* As a first time user I want to easily understand how to change/delete my reservations
 
 ## Site structure
 
@@ -52,7 +52,10 @@
 ### Create/manage Booking
 
 * Here the user can choose between the create booking page or the manage booking page.
-* Create booking offers the user to easily pick when they want to make their reservation. They can choose date and time, and they have to fill in their name, email and how many guests that will attend to book. 
+* Create booking offers the user to easily pick when they want to make their reservation. They can choose date and time, and they have to fill in their name, email and how many guests that will attend to book. They will not be able to book at the same time as someone else, if that happens a message looking like this will appear:
+
+![Image](readme.images/sorry.png)
+
 * If the user then click on the manage booking option they can see their reservation and they are able to edit and delete as per their liking. If the user click on 'delete' they can see a sign popping up asking if they are sure, the user then have to press yes or no.
 
 ![Image](readme.images/booking.png)
