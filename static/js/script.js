@@ -1,6 +1,10 @@
 window.onload = () => {
     let modal = document.querySelector('#manageModal');
     let manageBookingsElement = document.querySelector('#manageBookings');
+
+    if(!modal || !manageBookingsElement)
+        return;
+
     let buttons = manageBookingsElement.querySelectorAll('.delete-button');
     buttons.forEach((item) => {
         item.addEventListener('click',() => {
