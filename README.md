@@ -148,6 +148,7 @@
 
 * [GitHub](https://github.com/) - to host the repositories.
 * [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
+* [Elephantsql](https://www.elephantsql.com/) - for the postgresql
 * [Python](https://docs.python.org/3/contents.html) - primary language of the application.
 * [HTML](https://www.w3schools.com/html/) - Structure/skeleton of the page
 * [CSS](https://www.w3schools.com/css/) - extra styling of the webpage
@@ -195,6 +196,21 @@
 * No bugs were detected
 
 ## Deployment
+
+### [Elephantsql](https://www.elephantsql.com/) 
+
+* Heroku needs sql's to work
+* ElephantSQL will manage administrative tasks of PostgreSQL, such as installation, upgrades to latest stable version and backup handling.
+* It automates every part of setup and running of PostgreSQL clusters.
+
+1. Log into Heroku 
+The first step to creating a free PostgreSQL database is to log in to Heroku. To create a new database on Heroku, an app must first be created within the personal dashboard. 
+
+2. Create a new Heroku app 
+Once logged in to Heroku, navigate to the personal app dashboard to create a new Heroku app. Simply click the Create new app button, which should be located on the top-right corner of the dashboard. 
+
+3. Add a PostgreSQL database 
+After creating the new app, it's time to attach a PostgreSQL database to it. Simply navigate to the Resources tab located in the header of the app's dashboard. Add the ElephantSql and a free PostgreSQL database has now been successfully created. 
 
 ### [Github](https://github.com/) 
 
