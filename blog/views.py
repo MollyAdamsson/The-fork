@@ -7,6 +7,7 @@ from django.views import View
 from .forms import BookingForm, BookingFormStaff
 from .models import Booking
 from django.views.generic.edit import UpdateView
+from django.views.generic.edit import DeleteView
 
 
 class IndexView(TemplateView):
@@ -91,25 +92,11 @@ class ManageBookingView(ListView):
             return self.model.objects.filter(userId=self.request.user.id)
 
 
-class DeleteBookingView(TemplateView):
-    """ A view to delete a booking """
+class DeleteBookingView2(DeleteView):
+    """ A view to delete booking """
+    model = Booking
     template_name = 'delete_booking.html'
-
-    def get(self, request):
-        id = self.request.GET.get('bookingId')
-        booking = Booking.objects.filter(pk=id)
-
-        if booking.count() > 0 and (
-            request.user.is_staff or str(request.user.id) == booking[0].userId
-                    ):
-            booking.delete()
-            return render(
-                request, 'delete_success.html', context={'success': True}
-                )
-        else:
-            return render(
-                request, 'delete_success.html', context={'success': False}
-                )
+    success_url = '/deletesuccess'
 
 
 class EditBookingView(UpdateView):

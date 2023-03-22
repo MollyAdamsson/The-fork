@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Booking confirm delete -->
+
+
+<form method="post" class="p-3">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p> 
+    <a href="javascript:history.go(-1)">Back</a>    
+    <input type="submit" value="Confirm" class="btn btn-outline-danger delete-button">
+    
+</form>
+
+{% endblock %}

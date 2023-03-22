@@ -1,5 +1,6 @@
 from . import views
 from .views import EditBookingView
+from .views import DeleteBookingView2
 from django.urls import path
 
 
@@ -23,7 +24,7 @@ urlpatterns = [
         name='bookingsuccess'
         ),
     path(
-        'deletebooking/', views.DeleteBookingView.as_view(),
+        'deletebooking/<int:pk>/', views.DeleteBookingView2.as_view(),
         name='deletebooking'
         ),
     path(

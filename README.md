@@ -217,6 +217,14 @@ code in your IDE: pip3 freeze > requirements.txt
 * Navgiate to the deploy section
 * Scroll down to the "deployment method" and select "Github"
 * Authorise the connection
+* Also important to make sure you have the right config variables applied, these change the way the app behaves. 
+* Go to the settings tab and then click reveal config vars
+* Add the following config vars:
+* * SECRET_KEY: (Your secret key)
+* * DATABASE_URL: (This should already exist with add on of postgres)
+* * EMAIL_HOST_USER: (email address)
+* * EMAIL_HOST_PASS: (email app password)
+* * CLOUNDINARY_URL: (cloudinary api url)
 * Search for the repository name you've chosen
 * Make sure you have selected the correct branch (master/main), and select the method you desire.
 
